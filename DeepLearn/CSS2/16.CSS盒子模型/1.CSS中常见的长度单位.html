@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS常见的长度单位</title>
+        <style>
+            #p1 {
+                /* 第一种长度单位：像素 */
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                font-size: 20px;
+            }
+            #p2 {
+                /* 第二种长度单位：em（相对于font-size的倍数，如果未设置font-size则向父元素寻找，如果仍然未找到。那么默认浏览器的字体大小。 */
+                width: 10em;
+                height: 10em;
+                background-color: green;
+                /* font-size: 20px */
+                /* 如果font-size也设置的是em则同理向上寻找然后传递给其他的依赖的标签 */
+                font-size: 1em;
+            }
+            #p3 {
+                /* 第三种长度单位：rem（根据网页的根元素的font-size来决定，即根据html标签来决定 */
+                width: 100rem;
+                height: 100rem;
+                background-color: gray;
+                font-size: 10rem;
+            }
+            html {
+                font-size: 2px;
+            }
+            #p4 {
+                width: 200px;
+                height: 200px;
+                background-color: purple;
+                font-size: 20px;
+            }
+            .p12 {
+                width: 50%;
+                height: 50%;
+                background-color: orange;
+                font-size: 100%;
+            }
+        </style>
+    </head>
+    <body style="font-size: 20px;">
+        <div id="p1">1</div>
+        <div id="p2">2</div>
+        <div id="p3">3</div>
+        <div id="p4">
+            <div class="p12">
+                4
+            </div>
+        </div>
+    </body>
+</html>

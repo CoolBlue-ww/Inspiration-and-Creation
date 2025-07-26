@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>语言伪类</title>
+        <style>
+            /* div:lang(zh-CN) {
+                color: red;
+            } */
+            div:lang(en) {
+                color: green;
+            }
+            :lang(zh-CN) {
+                color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>你好啊！</div>
+        <div lang="en">我不好？</div>
+        <div>hello, word!</div>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS边框属性</title>
+        <!-- 边框属性 -->
+        <style>
+            table {
+                /* 三个必须同时存在 */
+                border-width: 3px;
+                border-color: green;
+                border-style: none;
+                /* 实线 */
+                border-style: solid;
+                /* 虚线 */
+                border-style: dashed;
+                /* 点线 */
+                border-style: dotted;
+                /* 双实线 */
+                border-style: double;
+                /* 复合属性 */
+                border: 4px solid red;
+            }
+            th, td {
+                border: 3px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>同学的基本信息</caption>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>兴趣爱好</th>
+                    <th>政治面貌</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>莫清涛</td>
+                    <td>18</td>
+                    <td>打游戏</td>
+                    <td>国名党</td>
+                </tr>
+                <tr>
+                    <td>欧家兴</td>
+                    <td>19</td>
+                    <td>打金铲铲</td>
+                    <td>团员</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>20</td>
+                    <td>打篮球</td>
+                    <td>群众</td>
+                </tr>
+                <tr>
+                    <td>王二麻子</td>
+                    <td>40</td>
+                    <td>踢足球</td>
+                    <td>共产党员</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS选择器优先级_简单聊</title>
+        <!-- 行内 > ID选择器 > 类选择器 > 元素选择器 > 通配选择器 -->
+        <!-- 同类型的选择器才能覆盖，如果优先级高的没有设置样式，那就看后面设置的样式。 -->
+        <style>
+            #mn {
+                color: skyblue;
+            }
+            .nm {
+                color: green;
+            }
+            * {
+                color: red;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <div class="nm" id="mn" style="color: yellow;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga neque quia suscipit dolor perferendis sequi omnis officia, ad modi et qui corrupti doloremque reprehenderit molestias temporibus eligendi incidunt ea eaque id laboriosam, amet odit similique alias. Eaque quisquam ducimus labore quaerat architecto minus maiores temporibus doloribus in eos qui, officiis unde, delectus non, ea voluptatibus accusamus dolorum molestiae voluptatum aut?
+    </div>
+</html>

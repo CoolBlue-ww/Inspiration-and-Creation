@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>后代选择器</title>
+        <style>
+            ul li {
+                color: red;
+                font-size: 50px;
+                background-color: green;
+            }
+            ol li a {
+                color: blue;
+                font-size: 40px;
+                background-color: yellow;
+            }
+            .name li#qingwa {
+                color: orange;
+                font-size: 30px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>上海</li>
+            <li>湖南</li>
+            <li>北京</li>
+        </ul>
+        <hr>
+        <ol>
+            <li>张三</li>
+            <li>李四</li>
+            <li>
+                <a href="#">你好啊</a>
+            </li>
+            <li>王二麻子</li>
+        </ol>
+        <hr>
+        <ul class="name">
+            <li id="qingwa">莫清涛</li>
+            <li>欧家兴</li>
+            <li>田圣杰</li>
+            <li>张家明</li>
+        </ul>
+    </body>
+</html>

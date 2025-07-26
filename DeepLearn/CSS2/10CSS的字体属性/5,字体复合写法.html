@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS字体的混合写法</title>
+        <style>
+            /* 字体族必须放在倒数第一位，字体大小必须放在倒数第二位。 */
+            div {
+                font: italic bold 30px "翩翩体-简";
+            }
+            span {
+                font: lighter oblique 20px "宋体";
+            }
+            p {
+                font: italic normal 15px "隶书";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            依旧是老样子，这是一个标题。它在HTML里的语义很重要，但是在我这它可不重要。
+        </h1>
+        <div>
+            这里是body的子元素div，这里面我想些啥就写啥，谁也拦不住我！
+        </div>
+        <span>
+            这里是body的子元素span，在这里我也是想些啥就写啥。它纯纯就是一个小div。
+        </span>
+        <p>我是一个p元素，我来告诉你，我要给上面的div和span来添加样式了。</p>
+        <p>嘿嘿，顺便我自己也来增加点样式。</p>
+    </body>
+</html>

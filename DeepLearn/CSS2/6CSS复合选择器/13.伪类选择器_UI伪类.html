@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>UI伪类</title>
+        <style>
+            input:checked {
+                width: 100px;
+                height: 100px;
+            }
+            input:disabled {
+                background: red;
+            }
+            input:enabled {
+                background: green;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 复选框 -->
+        <input type="checkbox">
+        <!-- 单选按钮 -->
+        <input type="radio" name="gender">
+        <input type="radio" name="gender">
+        <!-- 输入框 -->
+        <input>
+        <input disabled>
+    </body>
+</html>

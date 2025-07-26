@@ -1,0 +1,288 @@
+2025-03-18 15:12:28 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: scrapy_zhanzhangsucai)
+2025-03-18 15:12:29 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.1, Platform Windows-11-10.0.26100-SP0
+2025-03-18 15:12:29 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-18 15:12:29 [asyncio] DEBUG: Using selector: SelectSelector
+2025-03-18 15:12:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-18 15:12:29 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-18 15:12:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-18 15:12:29 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-18 15:12:29 [scrapy.extensions.telnet] INFO: Telnet Password: ff3a19314321362a
+2025-03-18 15:12:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-03-18 15:12:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zhanzhangsucai',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'scrapy_zhanzhangsucai.log',
+ 'NEWSPIDER_MODULE': 'scrapy_zhanzhangsucai.spiders',
+ 'SPIDER_MODULES': ['scrapy_zhanzhangsucai.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-03-18 15:12:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-03-18 15:12:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-18 15:12:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-03-18 15:12:29 [scrapy.core.engine] INFO: Spider opened
+2025-03-18 15:12:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-18 15:12:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian.html> (referer: None)
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_2.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_5.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_4.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_3.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:12:29 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://sc.chinaz.com/tupian/xiaomaotupian_3.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_25.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_6.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:12:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_7.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_2.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_8.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_5.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_10.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_5.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_24.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_9.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_5.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_21.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_20.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_11.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_6.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_12.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_7.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_23.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_22.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_19.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_20.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_15.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_20.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_17.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_21.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_16.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_21.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_18.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_21.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_14.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_10.html)
+2025-03-18 15:12:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_13.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_10.html)
+2025-03-18 15:12:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-03-18 15:12:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7729,
+ 'downloader/request_count': 25,
+ 'downloader/request_method_count/GET': 25,
+ 'downloader/response_bytes': 159581,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 25,
+ 'dupefilter/filtered': 210,
+ 'elapsed_time_seconds': 1.054633,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 3, 18, 7, 12, 30, 419232, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 843777,
+ 'httpcompression/response_count': 25,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 4,
+ 'response_received_count': 25,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'start_time': datetime.datetime(2025, 3, 18, 7, 12, 29, 364599, tzinfo=datetime.timezone.utc)}
+2025-03-18 15:12:30 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-03-18 15:38:47 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: scrapy_zhanzhangsucai)
+2025-03-18 15:38:47 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.1, Platform Windows-11-10.0.26100-SP0
+2025-03-18 15:38:47 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-18 15:38:47 [asyncio] DEBUG: Using selector: SelectSelector
+2025-03-18 15:38:47 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-18 15:38:47 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-18 15:38:47 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-18 15:38:47 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-18 15:38:47 [scrapy.extensions.telnet] INFO: Telnet Password: 7d8ec6a70b4fa324
+2025-03-18 15:38:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-03-18 15:38:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zhanzhangsucai',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'scrapy_zhanzhangsucai.log',
+ 'NEWSPIDER_MODULE': 'scrapy_zhanzhangsucai.spiders',
+ 'SPIDER_MODULES': ['scrapy_zhanzhangsucai.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-03-18 15:38:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-03-18 15:38:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-18 15:38:47 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-03-18 15:38:47 [scrapy.core.engine] INFO: Spider opened
+2025-03-18 15:38:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-18 15:38:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian.html> (referer: None)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_2.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_3.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_5.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_6.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:38:48 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://sc.chinaz.com/tupian/xiaomaotupian_3.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_4.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_25.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_7.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_2.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_24.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_22.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_23.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_8.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_3.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_21.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_20.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_11.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_6.html)
+2025-03-18 15:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_12.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_7.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_9.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_5.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_10.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_5.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_17.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_22.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_18.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_22.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_15.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_20.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_19.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_24.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_16.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_21.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_13.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_8.html)
+2025-03-18 15:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_14.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_12.html)
+2025-03-18 15:38:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-03-18 15:38:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7728,
+ 'downloader/request_count': 25,
+ 'downloader/request_method_count/GET': 25,
+ 'downloader/response_bytes': 159579,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 25,
+ 'dupefilter/filtered': 210,
+ 'elapsed_time_seconds': 1.330834,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 3, 18, 7, 38, 49, 262304, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 843777,
+ 'httpcompression/response_count': 25,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 5,
+ 'response_received_count': 25,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'start_time': datetime.datetime(2025, 3, 18, 7, 38, 47, 931470, tzinfo=datetime.timezone.utc)}
+2025-03-18 15:38:49 [scrapy.core.engine] INFO: Spider closed (finished)
+2025-03-18 15:52:09 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: scrapy_zhanzhangsucai)
+2025-03-18 15:52:09 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.1, Platform Windows-11-10.0.26100-SP0
+2025-03-18 15:52:09 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-18 15:52:09 [asyncio] DEBUG: Using selector: SelectSelector
+2025-03-18 15:52:09 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-18 15:52:09 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-18 15:52:09 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-18 15:52:09 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-18 15:52:09 [scrapy.extensions.telnet] INFO: Telnet Password: 38fcde7d5e7350eb
+2025-03-18 15:52:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-03-18 15:52:09 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_zhanzhangsucai',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'scrapy_zhanzhangsucai.log',
+ 'NEWSPIDER_MODULE': 'scrapy_zhanzhangsucai.spiders',
+ 'SPIDER_MODULES': ['scrapy_zhanzhangsucai.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2025-03-18 15:52:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-03-18 15:52:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-18 15:52:10 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2025-03-18 15:52:10 [scrapy.core.engine] INFO: Spider opened
+2025-03-18 15:52:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-18 15:52:10 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian.html> (referer: None)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_2.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:52:10 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://sc.chinaz.com/tupian/xiaomaotupian_3.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_6.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_3.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_25.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_4.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_5.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian.html)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_7.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_2.html)
+2025-03-18 15:52:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_8.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_6.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_9.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_6.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_11.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_6.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_10.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_6.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_24.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_22.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_23.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_12.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_7.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_21.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_13.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_8.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_20.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_25.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_15.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_11.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_14.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_11.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_16.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_11.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_18.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_22.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_19.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_24.html)
+2025-03-18 15:52:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://sc.chinaz.com/tupian/xiaomaotupian_17.html> (referer: https://sc.chinaz.com/tupian/xiaomaotupian_22.html)
+2025-03-18 15:52:11 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-03-18 15:52:11 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7728,
+ 'downloader/request_count': 25,
+ 'downloader/request_method_count/GET': 25,
+ 'downloader/response_bytes': 159579,
+ 'downloader/response_count': 25,
+ 'downloader/response_status_count/200': 25,
+ 'dupefilter/filtered': 210,
+ 'elapsed_time_seconds': 1.130114,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 3, 18, 7, 52, 11, 379800, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 843777,
+ 'httpcompression/response_count': 25,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 31,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 4,
+ 'response_received_count': 25,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'start_time': datetime.datetime(2025, 3, 18, 7, 52, 10, 249686, tzinfo=datetime.timezone.utc)}
+2025-03-18 15:52:11 [scrapy.core.engine] INFO: Spider closed (finished)

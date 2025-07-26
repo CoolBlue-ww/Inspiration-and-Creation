@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>表格独有的CSS相关属性</title>
+        <style>
+            table {
+                border-color: red;
+                border-width: 1px;
+                border-style: solid;
+                border-style: dashed; 
+                /* 需要显示的设置列表的宽度才能用fixed来平均分配每一列的宽度。 */
+                width: 300px
+            }
+            td, th {
+                border-color: green;
+                border-width: 1px;
+                border-style: solid;
+            }
+            /* 表格中独有的CSS属性 */
+            table {
+                /* 设置每一列的列宽 */
+                /* 自适应 */
+                table-layout: auto;
+                /* 每一列列宽平均分配 */
+                table-layout: fixed;
+                /* 单元格之间的宽度 */
+                border-spacing: 10px;
+                /* 合并单元格 */
+                border-collapse: collapse;
+                /* 不合并单元格（默认） */
+                border-collapse: separate;
+                /* 隐藏没有内容的单元格 */
+                empty-cells: hide;
+                /* 显示没有内容的单元格 */
+                empty-cells: show;
+                /* 设置表格标题的位置 */
+                /* 表格的上方 */
+                caption-side: top;
+                /* 表格的下方 */
+                caption-side: bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>班级花名册</caption>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>兴趣爱好</th>
+                    <th>政治面貌</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>莫清涛</td>
+                    <td>18</td>
+                    <td>打游戏</td>
+                    <td>国民党</td>
+                </tr>
+                <tr>
+                    <td>欧家兴</td>
+                    <td>19</td>
+                    <td>打游戏</td>
+                    <td>团员</td>
+                </tr>
+                <tr>
+                    <td>张三</td>
+                    <td>20</td>
+                    <td>打篮球</td>
+                    <td>群众</td>
+                </tr>
+                <tr>
+                    <td>王二麻子</td>
+                    <td></td>
+                    <td>鲁国的纸</td>
+                    <td>党员</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

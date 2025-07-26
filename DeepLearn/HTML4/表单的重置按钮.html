@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>几种按钮</title>
+    </head>
+    <body>
+        <form action="https://search.jd.com/search" target="_blank">  
+            <!-- 两种确认按钮，一种重置按钮和一种普通按钮 -->
+            <label for="zhanghu">账户：</label><input id="zhanghu" type="text" name="account" value="lisi" maxlength="10">
+             <br>
+             <label>
+                密码：<input type="password" name="pwd" value="zhangsan" maxlength="10">
+             </label>
+             <br>
+             性别：
+             <input type="radio" name="gender" value="male" checked>男
+             <input type="radio" name="gender" value="female" disabled>女<br>
+             爱好：
+             <input type="checkbox" name="hobby" value="smoke" checked>吸烟
+             <input type="checkbox" name="hobby" value="drink">喝酒
+             <input type="checkbox" name="hobby" value="prme" checked>烫头<br>
+        <!-- 文本域 -->
+             <label for="qita">其他：</label>
+             <textarea  id="qita" name="other" cols="20" rows="3"></textarea><br>
+             贯籍：
+             <select name="place">
+                <option value="粤">广东</option>
+                <option value="沪">上海</option>
+                <option value="湘">湖南</option>
+                <option value="京" selected>北京</option>
+             </select><br>
+             <!-- 下拉选项 -->
+             <!--两种确认按钮 -->
+             <input type="submit" value="确认">
+             <button>点我确认</button>
+             <!-- 重置按钮 -->
+              <input type="reset" value="点我重置">
+              <button type="reset">重置</button>
+              <!-- 两种普通按钮 -->
+               <input type="button" value="检查">
+               <button type="button">检查账号是否被注册</button>
+               <!-- 隐藏域 -->
+                <input type="hidden" name="tag" value="10398">
+        </form>  
+    </body>
+</html>

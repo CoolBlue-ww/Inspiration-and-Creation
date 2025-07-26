@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>细说font-size</title>
+        <style>
+            /* 全部字体都设置成30px大小 */
+            body {
+                font-size: 30px;
+            }
+            .div1 {
+                background-color: red;
+                font-family: "微软雅黑"
+            }
+            .div2 {
+                background-color: blue;
+                font-family: "宋体";
+            }
+            .div3 {
+                background-color: purple;
+                font-family: "隶书";
+            }
+            .div4 {
+                background-color: skyblue;
+                font-family: "翩翩体-简";
+            }
+            p {
+                font-size: 50px;
+                font-family: "翩翩体-简";
+                font-style: oblique;
+                color: green;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">我是第一个div，我是用微软雅黑写的。</div>
+        <hr>
+        <div class="div2">我是第二个div，我是用宋体写的。</div>
+        <hr>
+        <div class="div3">我是第三个div，我是用隶书写的。</div>
+        <hr>
+        <div class="div4">我是第四个div，我是用翩翩体-简写的。</div>
+        <hr>
+        <p>
+            总结：同样的font-size值但是根据不同的字体设计。实际上出现在页面上的字体大小是不一样的。
+        </p>
+        <p>
+            并且，字体并不会出现在框的正中心，而是根据不同的字体，向上向下移动偏差。
+        </p>
+    </body>
+</html>

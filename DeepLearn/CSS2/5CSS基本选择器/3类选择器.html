@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>类选择器</title>
+        <style>
+            /* 通过class属性的类名进行选择，一个标签不能有多个相同的属性，但是class标签可以有多个类名中间要用空格断开 */
+            /* 不是同一个标签也可以设置相同的类名，有利于样式的交叉重叠 */
+            .say {
+                color: red;
+            }
+            .you {
+                color: green;
+                font-size: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>你好啊，欢迎来到土味官网。我是主持人土味哥。</h1>
+        <br>
+        <h2>土味情话</h2>
+        <h3>作者：土味哥</h3>
+        <p class="say">我对你说：万水千山都是情，给我一点行不行。</p>
+        <p class="say">我对你说：喜欢年少的你，你就是年少的欢喜。</p>
+        <p class="say you">我对你说：草莓，蓝莓，蔓越莓，今天你想我了没？</p>
+        <br>
+        <h2>反杀土味情话</h2>
+        <h3>作者：优秀的土味哥</h3>
+        <p class="you">你回答我：一寸光阴一寸金，劝你死了这条心。</p>
+        <p class="you">你回答我：喜欢你奶奶个腿，你喜欢。</p>
+        <p class="you">你回答我：西瓜，南瓜，哈密瓜，把你打成大傻瓜。</p>
+    </body>
+</html>

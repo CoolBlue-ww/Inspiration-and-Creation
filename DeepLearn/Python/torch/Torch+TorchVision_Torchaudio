@@ -1,0 +1,3 @@
+Torch==2.7+cpu
+Torchvision==0.22.0+cup
+Torchaudio==2.7+cpu

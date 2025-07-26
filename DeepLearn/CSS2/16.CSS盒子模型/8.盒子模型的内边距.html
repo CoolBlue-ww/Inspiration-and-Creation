@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>盒子模型的内边距</title>
+        <style>
+            div {
+                background-color: skyblue;
+                height: 400px;
+                width: 400px;
+                /* 同时设置上下左右四个方向。 */
+                padding: 20px;
+                /* 同时设置上下边距和左右边距。 */
+                padding: 10px 20px;
+                /* 分别设置上下边距，同时设置左右边距。 */
+                padding: 10px 20px 30px;
+                /* 各自设置上下左右的内边距。方向是从上依次逆时针旋转。 */
+                padding: 10px 20px 30px 50px;
+                font-size: 20px;
+            }
+            span {
+                background-color: orange;
+                font-size: 20px;
+                /* 行内元素可以设置左右的内边距，和块元素无异。 */
+                padding-left: 20px;
+                padding-right: 30px;
+                /* 但是设置上下内边距时，就像不存在一样，会很轻易的覆盖上下相邻的元素。 */
+                padding-top: 20px;
+                padding-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            你好啊！我是一个div，div的d，div的i，div的v。
+        </div>
+        <hr>
+        <span>
+            我是一条小青龙。
+        </span>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, maiores.
+        </div>
+    </body>
+</html>

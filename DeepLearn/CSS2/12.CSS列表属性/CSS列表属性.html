@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>css列表属性</title>
+        <style>
+            ul {
+                /* 自定义标签 */
+                list-style-type: none;
+                list-style-type: square;
+                list-style-type: decimal;
+                list-style-type: lower-roman;
+                list-style-type: upper-roman;
+                list-style-type: lower-alpha;
+                list-style-type: upper-alpha;
+                /* 自定义标签，并且在列表项之前插入一张图片。 */
+                list-style-image: url(./bg.gif);
+                /* 标签属于行内还是行外。 */
+                list-style-position: outside;
+                list-style-position: inside;
+                /* 复合属性 */
+                list-style: none url(./bg.gif) inside;
+            }
+            div {
+                height: 50px;
+                background: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            这里是分割区域！
+        </div>
+        <ul>
+            <li>你好呀，我是第一。</li>
+            <li>你好呀，我是第二。</li>
+            <li>你好呀，我是第三。</li>
+            <li>你好呀，我是第四。</li>
+        </ul>
+    </body>
+</html>

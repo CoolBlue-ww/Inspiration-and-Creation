@@ -1,0 +1,163 @@
+[1746687678.350][INFO]: Starting ChromeDriver 136.0.7103.92 (cb81a4cc5087a8303a6c8827ee2b80b71d26e334-refs/branch-heads/7103@{#1840}) on port 8080
+[1746687678.350][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1746687678.353][INFO]: ChromeDriver was started successfully on port 8080
+[1746687678.850][INFO]: [918e3f081aae6436d51250a89bc21678] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" ],
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1746687678.850][INFO]: Browser search. Trying... X:\桌面\chromedriver\chromedriver-win64\chromedriver-win64\chrome.exe
+[1746687678.850][INFO]: Browser search. Trying... X:\桌面\chromedriver\chromedriver-win64\chromedriver-win64\chrome.exe
+[1746687678.850][INFO]: Browser search. Trying... X:\桌面\chromedriver\chromedriver-win64\chromedriver-win64\chromium.exe
+[1746687678.853][INFO]: Browser search. Trying... C:\Users\Y7000\AppData\Local\Google\Chrome\Application\chrome.exe
+[1746687678.854][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746687678.854][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746687678.855][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1746687678.856][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1746687678.857][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1746687678.857][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1746687678.858][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" --user-data-dir="C:\Users\Y7000\AppData\Local\Temp\scoped_dir532_2114860808" data:,
+[1746687679.375][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1746687679.385][INFO]: [918e3f081aae6436d51250a89bc21678] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "136.0.7103.93",
+      "chrome": {
+         "chromedriverVersion": "136.0.7103.92 (cb81a4cc5087a8303a6c8827ee2b80b71d26e334-refs/branch-heads/7103@{#1840})",
+         "userDataDir": "C:\\Users\\Y7000\\AppData\\Local\\Temp\\scoped_dir532_2114860808"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:54265"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "918e3f081aae6436d51250a89bc21678"
+}
+[1746687679.423][INFO]: [918e3f081aae6436d51250a89bc21678] COMMAND ExecuteCDP {
+   "cmd": "Network.setExtraHTTPHeaders",
+   "params": {
+      "headers": {
+         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+      }
+   }
+}
+[1746687679.423][INFO]: Waiting for pending navigations...
+[1746687679.426][INFO]: Done waiting for pending navigations. Status: ok
+[1746687679.427][INFO]: Waiting for pending navigations...
+[1746687679.427][INFO]: Done waiting for pending navigations. Status: ok
+[1746687679.427][INFO]: [918e3f081aae6436d51250a89bc21678] RESPONSE ExecuteCDP {
+}
+[1746687679.429][INFO]: [918e3f081aae6436d51250a89bc21678] COMMAND Navigate {
+   "url": "https://www.baidu.com"
+}
+[1746687679.429][INFO]: Waiting for pending navigations...
+[1746687679.430][INFO]: Done waiting for pending navigations. Status: ok
+[1746687679.630][INFO]: Waiting for pending navigations...
+[1746687680.625][INFO]: Done waiting for pending navigations. Status: ok
+[1746687680.625][INFO]: [918e3f081aae6436d51250a89bc21678] RESPONSE Navigate
+[1746687680.627][INFO]: [918e3f081aae6436d51250a89bc21678] COMMAND GetSource {
+}
+[1746687680.627][INFO]: Waiting for pending navigations...
+[1746687680.627][INFO]: Done waiting for pending navigations. Status: ok
+[1746687680.648][INFO]: Waiting for pending navigations...
+[1746687680.649][INFO]: Done waiting for pending navigations. Status: ok
+[1746687680.649][INFO]: [918e3f081aae6436d51250a89bc21678] RESPONSE GetSource "\u003Chtml>\u003Chead>\u003Cscript type=\"text/javascript\" charset=\"utf-8\" src=\"https://pss.bdstatic.com/static/superman/js/components/advert-064271ed9b.js\">\u003C/script>\u003Cscript type=\"text/javascript\" charset=\"utf-8\" ..."
+[1746687680.659][INFO]: [918e3f081aae6436d51250a89bc21678] COMMAND GetUrl {
+}
+[1746687680.659][INFO]: Waiting for pending navigations...
+[1746687680.660][INFO]: Done waiting for pending navigations. Status: ok
+[1746687680.663][INFO]: Waiting for pending navigations...
+[1746687680.664][INFO]: Done waiting for pending navigations. Status: ok
+[1746687680.664][INFO]: [918e3f081aae6436d51250a89bc21678] RESPONSE GetUrl "https://www.baidu.com/"
+[1746687680.769][INFO]: [918e3f081aae6436d51250a89bc21678] COMMAND Quit {
+}
+[1746687680.793][INFO]: [918e3f081aae6436d51250a89bc21678] RESPONSE Quit

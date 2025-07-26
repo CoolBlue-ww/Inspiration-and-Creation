@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS文本间距</title>
+    <style>
+        /* 字母间距 */
+        .div2 {
+            letter-spacing: 30px;
+        }
+        /* 通过空格来识别单词，像素值可以是整数也可以是负数。 */
+        /* 正数代表间距变大，负数表示间距减小，当减小到一定程度，即可发生重叠。 */
+        /* 单词间距 */
+        .div3 {
+            word-spacing: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur.</div>
+    <div class="div2">Lorem ipsum dolor sit amet consectetur.</div>
+    <!-- 根据空格识别单词 -->
+    <div class="div3">Lorem ipsum dolor sit amet consectetur. 你好啊！</div>
+</body>
+</html>

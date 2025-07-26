@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <mtea charset="UTF-8">
+        <title>结构选择器1</title>
+        <style>
+            /* 结构一 */
+            /* div>p:first-child {
+                color:red
+            } */
+             /* 结构二
+            div>p:first-child {
+                color: red;
+            } */
+            /* 结构三 */
+            /* div p:first-child {
+                color:red;
+            } */
+            /* 他父亲的第一个儿子p元素 */
+            p:first-child {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 有改动，body不纳入p元素的父亲。 -->
+        <p>测试3</p>
+        <div>
+            <p>测试1</p>
+            <marquee>
+                <p>测试2</p>
+                <p>老吴：79</p>
+            </marquee> 
+            <span>张三：40分</span>
+            <p>李四：69分</p>
+            <p>赵武：90分</p>
+            <p>李白：100分</p>
+        </div>  
+    </body>
+</html>

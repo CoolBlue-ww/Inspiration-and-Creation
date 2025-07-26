@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS的垂直方向上文本对齐</title>
+        <style>
+            /* 对于但行文本来说默认的对齐方式就是顶部对齐。 */
+            .d1 {
+                height: 60px;
+                background-color: red;
+            }
+            /* 对于单行文本，当容器高度等于文本行高时，垂直方向上就是居中对齐。 */
+            .d2 {
+                height: 40px;
+                line-height: 40px;
+                background-color: skyblue;
+            }
+            /* 对于单行文本，可以通过height和line-height来实现向下对齐 */
+            /* line-height=height*2-font-size+x */
+            .d3 {
+                background-color: purple;
+                height: 100px;
+                line-height: 184px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            你好呀！我是你的老朋友，我叫div。
+        </div>
+        <div class="d2">
+            你好呀，我还是一个div。
+        </div>
+        <div class="d3">
+            hello，我又又又是一个div。
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>子代选择器</title>
+        <style>
+            div>a {
+                color: red;
+                font-size: 50px;
+            }
+            div>p>a {
+                color: skyblue;
+                font-size: 30px;
+            }
+            .l9>a {
+                color: brown;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="#">张三</a>
+            <a href="#">李四</a>
+            <a href="#">王二麻子</a>
+            <p>
+                <a href="#">hello,VScode</a>
+                <div class="l9">
+                    <a href="#">孙七</a>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>兄弟选择器</title>
+        <style>
+            /* 只往下找，紧紧相邻。睡在我下铺的兄弟。相邻兄弟选择器 */
+            /* div+p {
+                color: red;
+            } */
+             /* 直往下找，睡在我下铺的所有兄弟。通用兄弟选择器。 */
+            /* div~p {
+                color: red;
+            } */
+            /* li+li {
+                color: green;
+            } */
+            li~li {
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div>湖南工业大学</div>
+        <p>土木工程</p>
+        <p>化学与制药</p>
+        <p>计算机科学</p>
+        <p>电子信息工程</p>
+        <ul>
+            <li>上海</li>
+            <li>广州</li>
+            <li>北京</li>
+            <li>湖南</li>
+        </ul>
+    </body>
+</html>

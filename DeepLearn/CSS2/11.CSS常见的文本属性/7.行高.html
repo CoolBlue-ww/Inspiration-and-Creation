@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS文本行高</title>
+        <style>
+            .div1 {
+                /* 默认值会和相应的文字大小匹配 */
+                line-height: normal;
+                /* 像素 */
+                line-height: 90px;
+                /* 数字，是基于文字font-size的倍数 */
+                line-height: 5;
+                /* 百分比，参考文字font-size的百分比 */
+                line-height: 500%;
+                background-color: red;
+            }
+            .div2 {
+                height: 30px;
+                line-height: 30px;
+                background: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">我是一个div标签，are you ok？</div>
+        <div class="div2">我是另外一个div标签，iam 非常非常欧克。</div>
+    </body>
+</html>

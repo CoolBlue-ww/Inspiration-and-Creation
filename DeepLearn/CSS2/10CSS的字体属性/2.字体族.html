@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS字体族</title>
+        <style>
+            div {
+                /* 字体族里，不同的字体要用逗号分隔。相比较以往的操作已经发生了改变。 */
+                /* 在非衬线体，或者衬线体后面通常分别要加上serif和sans-serif。 */
+                font-size: 40px;
+                /* 非衬线字体 */
+                font-family: "微软雅黑","sans-serif";
+                /* 衬线字体 */
+                font-family: "翩翩体-简","宋体","隶书",serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            你好，这是一段文字。虽然说它是一段文字，但是它并不是一段普通的文字。它是一段，它是一段，哎！
+        </div>
+        <div>
+            我也说不清楚，它！为何不普通。但是我能确定的是，它就是不普通。
+        </div>
+        <div>
+            什么？你说你不相信！那我就告诉你！它为何不普通。
+        </div>
+        <div>哈哈！因为我是忽悠你的！</div>
+    </body>
+</html>

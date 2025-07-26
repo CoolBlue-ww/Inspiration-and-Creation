@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>属性选择器</title>
+        <style>
+            /* 1 选中具有title属性的元素 */
+            /* [title] {
+                color: red;
+            } */
+            /* 2 选中具有title属性，并且属性值为ergou的元素 */
+            /* [title="ergou"] {
+                color: green;
+            } */
+            /* 3 选中具有title属性，并且属性值以w开头的元素 */
+            /* [title^="w"] {
+                color: blue;
+            } */
+            /* 4 选中具有title属性，并且属性值以i结尾的元素 */
+            /* [title$="i"] {
+                color: pink;
+            } */
+            /* 5 选中具有title属性，并且属性值包含字母s的元素 */
+            [title*="s"] {
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div title="zhangsan">张三</div>
+        <div title="lisi">李四</div>
+        <div title="wd">王二麻子</div>
+        <div title="ergou">李二狗</div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS字体风格</title>
+        <!-- 字体风格，也就是字体倾斜。 -->
+        <style>
+            span {
+                /* 默认正常，字体不倾斜。 */
+                font-style: normal;
+                /* 第一种倾斜方式 */
+                font-style: italic;
+                /* 第二种倾斜方式 */
+                font-style: oblique;
+            }
+            /* 第一种倾斜方式更好 */
+            p {
+                font-size: 20px;
+                color: skyblue;
+                font-style: italic;
+                font-style: oblique;
+                font-style: italic;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>你好，这是一段标题。果名思意。标题的标，标题的题。而下面是主要内容。</h1>
+        <div>
+            <p>我来给下面的这段文字添加点样式，让他看起来更有意思。</p>
+            <span>
+                这段内容嵌套在body标签里的div标签里的span标签里的一段无用信息。
+            </span>
+        </div>
+    </body>
+</html>

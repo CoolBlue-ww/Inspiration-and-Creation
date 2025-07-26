@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS字体大小</title>
+        <style>
+            div>p {
+                font-size: 45px;
+            }
+            /* 通过CSS的继承属性来统一页面所有的文字大小，但是其优先级是最低的。所以利于后期特殊部位的样式覆盖。 */
+            body {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>你好呀，今天的天气真不错。</p>
+            <p>那么，现在你吃早饭了吗？</p>
+            <p>如果还没吃的话，</p>
+            <p>正好我也没吃，要不要一起去吃碗兰州拉面？</p>
+        </div>
+    </body>
+</html>

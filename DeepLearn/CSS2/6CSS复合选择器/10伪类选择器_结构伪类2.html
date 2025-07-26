@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>结构伪类2</title>
+        <style>
+            /* 第一种 */
+            /* div>p:first-child {
+                color: red;
+                font-size: 50px;
+            } */
+            /* 第二种
+            div>p:nth-child(5) {
+                color: green;
+                font-size: 30px;
+            } */
+            /* 偶数even */
+            /* div>p:nth-child(2n) {
+                color: pink;
+                font-size: 90px;
+            } */
+            /* 奇数odd */
+            /* div>p:nth-child(2n+1) {
+                color: blue;
+                font-size: 50px;
+            } */
+            /* 前五个，参数里的格式是an+b */
+            /* div>p:nth-child(-n+5) {
+                color: yellow;
+                font-size: 56px;
+            } */
+            /* 第三种
+            div>p:last-child {
+                color: skyblue;
+                font-size: 40px;
+            } */
+            /* 第四种
+            div>p:first-of-type {
+                color: red;
+                font-size: 50px;
+            } */
+            /* 第五种
+            div>p:nth-of-type(2) {
+                color: skyblue;
+                font-size: 20px;
+            } */
+            /* 第六种
+            div>p:last-of-type {
+                color: green;
+                font-size: 78px;
+            } */
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>0</span>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <span>你好啊？</span>
+            <h2>我不好！</h2>
+        </div>
+    </body>
+</html>

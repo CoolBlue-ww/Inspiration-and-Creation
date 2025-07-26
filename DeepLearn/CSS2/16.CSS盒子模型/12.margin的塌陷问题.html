@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>margin的塌陷问题</title>
+        <style>
+            .div1,.div2 {
+                width: 350px;
+                height: 350px;
+            }
+            .div1 {
+                background-color: purple;
+                margin-top: 50px;
+            }
+            .div2 {
+                background-color: deepskyblue;
+                margin-bottom: 50px;
+            }
+            #fu {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="fu">
+            <div class="div1">我是第一个div。</div>
+            <div class="div2">我是第二个div。</div>
+        </div>
+    </body>
+</html>

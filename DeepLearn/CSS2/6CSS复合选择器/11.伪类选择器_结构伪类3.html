@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>结构伪类3</title>
+        <style>
+            /* 第一种 */
+            /* div>p:nth-last-child(1) {
+                color: red;
+            } */
+            /* 第二种 */
+            /* div>p:nth-last-of-type(1) {
+                color: green;
+            } */
+            /* 第三种 */
+            /* :root {
+                background-color: skyblue;
+            } */
+            /* 第四种 */
+            /* div:empty {
+                width: 10px;
+                background: pink;
+                height: 10px;
+            } */
+            /* 第五种 */
+            /* p:only-child {
+                color: red;
+            } */
+            /* p:only-of-type {
+                color: red;
+            } */
+        </style>
+    </head>
+    <body>
+        <span>
+            <p>你好啊！</p>
+            <span>我不好？</span>
+        </span>
+        <div>
+            <p>第一</p>
+            <p>第二</p>
+            <p>第三</p>
+            <p>第四</p>
+            <p>第五</p>
+            <p>第六</p>
+            <p>第七</p>
+            <p>第八</p>
+            <p>第九</p>
+            <p>第十</p>
+            <span>你好啊？</span>
+        </div>
+        <div></div>
+    </body>
+</html>

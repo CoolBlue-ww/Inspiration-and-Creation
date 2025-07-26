@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>鼠标相关的属性</title>
+        <style>
+            div {
+                font-size: 30px;
+                width: 600px;
+                height: 600px;
+                background-color: green;
+                /* 第一种鼠标样式，小手指 */
+                cursor: pointer;
+                /* 第二种鼠标样式：拖拽 */
+                cursor: move;
+                /* 第四种鼠标样式：自定义图片 */
+                cursor: url(./arrow.png),pointer;
+            }
+            /* 第三种鼠标样式：等待 */
+            button {
+                cursor: wait;
+            }
+            select {
+                cursor: pointer;
+            }
+            .p1 {
+                width: 200px;
+                height: 200px;
+                background-color: gray;
+                /* 第五种鼠标样式：帮助 */
+                cursor: help;
+            }
+        </style>
+    </head>
+    <body>
+        <div>你好啊！我是一个无关紧要的div标签。你将在我的额内部学习CSS鼠标相关的属性。
+            <input type="text">
+            <button>点我</button>
+            <select>
+                <option>上海</option>
+                <option>北京</option>
+                <option>越南</option>
+                <option>湖南</option>
+            </select>
+            <div class="p1">
+                你好啊！我是第一个div的儿子小div！
+            </div>
+        </div>
+    </body>
+</html>
