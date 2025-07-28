@@ -72,15 +72,10 @@ class JsonInfoParser(object):
 
     @staticmethod
     def convert_executable_path(
-            base_executable_path:  Path | None = None,
-            base_rootdir: Path | None = None,
+            driver_name: str,
             target_rootdir: Path | None = None,
     ) -> str | None:
-        target_executable_path = str(base_executable_path).replace(
-            str(base_rootdir),
-            str(target_rootdir),
-            1
-        )
+        target_executable_path = str(target_rootdir.joinpath(driver_name))
         return target_executable_path
 
     @staticmethod
@@ -89,8 +84,6 @@ class JsonInfoParser(object):
             driver_name,
             driver_version,
             compatible_version,
-            binary_path,
-            base_rootdir,
             target_rootdir,
     ) -> dict:
         driver_info = {
@@ -99,8 +92,7 @@ class JsonInfoParser(object):
                 'driver_version': driver_version,
                 'compatible_version': compatible_version,
                 'executable_path': JsonInfoParser.convert_executable_path(
-                    base_executable_path=binary_path,
-                    base_rootdir=base_rootdir,
+                    driver_name=driver_name,
                     target_rootdir=target_rootdir,
                 ),
             }
@@ -142,8 +134,6 @@ class JsonInfoParser(object):
                                     driver_name=driver_name,
                                     driver_version=driver_version,
                                     compatible_version=compatible_version,
-                                    binary_path=binary_path,
-                                    base_rootdir=base_rootdir,
                                     target_rootdir=target_rootdir,
                                 )
 
@@ -155,8 +145,6 @@ class JsonInfoParser(object):
                                     driver_name=driver_name,
                                     driver_version=driver_version,
                                     compatible_version=compatible_version,
-                                    binary_path=binary_path,
-                                    base_rootdir=base_rootdir,
                                     target_rootdir=target_rootdir,
                                 )
                                 return driver_name, driver_info
@@ -176,7 +164,7 @@ class JsonInfoParser(object):
 class InstallConfig(object):
     def __init__(self) -> None:
         self._enabled_install: bool = False
-        self._target_rootdir: Path | None = None
+        self._target_rootdir: Path | None = Path('ssdds')
         self._default_target_rootdir: Path = Path(
             Path(__file__).parent,
             'executable_files',
@@ -199,74 +187,101 @@ class InstallConfig(object):
             )
         return None
 
+    def ggsg(self,
+             rootdir: Path | str | None,
+             json_path: Path | None,
+             ) -> Path | None:
+        base_json_path = Path(
+            json_path,
+            'drivers.json'
+        )
+        driver_name, driver_info = JsonInfoParser(
+            json_path=base_json_path,
+            base_rootdir=rootdir,
+            target_rootdir=json_path,
+        ).parse_json_info
+        base_json_path.unlink(missing_ok=True)
+        json_path = json_path.joinpath('drivers_info.json')
+        self.dump_json(
+            json_path,
+            driver_info,
+        )
+        executable_path = driver_info[driver_name]['executable_path']
+        return executable_path
+
+
+
     def selenium_manager_install(self) -> None:
         os.environ['SE_CACHE_DIR'] = str(self._target_rootdir)
         return None
 
     def webdriver_manager_install(self) -> str | None:
 
-        if self._enabled_install and not self._target_rootdir:
+        if self._enabled_install and not self._target_rootdir and not self._default_target_rootdir:
             Path(self._default_target_rootdir).mkdir(parents=True, exist_ok=True)
 
         json_path_default_target = self._default_target_rootdir.joinpath('drivers_info.json')
         json_path_target = self._target_rootdir.joinpath('drivers_info.json')
 
-        if json_path_target.exists():
-            pass
+        if json_path_target.exists() or json_path_default_target.exists():
+            json_data = self.load_json(json_path_target or json_path_default_target)
+            if 'chromedriver' in json_data:
+                executable_path = Path(json_data['chromedriver']['executable_path'])
+                if executable_path.exists() and executable_path.is_file():
+                    return str(executable_path)
 
-        os.environ['WDM_LOCAL'] = '1'
-        rootdir = Path(DriverCacheManager()._root_dir)
-        source_directory = Path(rootdir).iterdir()
-        for source_file in source_directory:
-            if self._target_rootdir:
-                target_file = [_file.name for _file in self._target_rootdir.iterdir()]
-                if source_file.name in target_file:
-                    print('The file or directory already exists.')
-                    pass
-                else:
-                    shutil.move(source_file, self._target_rootdir)
             else:
-                default_target_file = [_file.name for _file in self._default_target_rootdir.iterdir()]
-                if source_file.name in default_target_file:
-                    print('The file or directory already exists.')
-                    pass
-                else:
-                    shutil.move(source_file, self._default_target_rootdir)
-        shutil.rmtree(rootdir)
+                json_path = json_path_target if json_path_target.exists() else json_path_default_target
+                parent_dir = json_path.parent
+                os.environ['WDM_LOCAL'] = '1'
+                base_executable_path = ChromeDriverManager().install()
+                rootdir = Path(DriverCacheManager()._root_dir)
+                base_json_path = rootdir.joinpath('drivers.json')
+                driver_name, driver_info = JsonInfoParser(
+                    json_path=base_json_path,
+                    base_rootdir=rootdir,
+                    target_rootdir=self._target_rootdir if self._target_rootdir.exists() else self._default_target_rootdir,
+                )
+                shutil.move(
+                    base_executable_path,
+                    parent_dir
+                )
+                shutil.rmtree(
+                    rootdir,
+                )
+                json_data[driver_name] = driver_info
+                executable_path = json_data[driver_name]['executable_path']
+                self.dump_json(
+                    json_path,
+                    json_data,
+                )
+                return executable_path
 
-        if self._target_rootdir:
-            base_json_path = Path(
-                self._target_rootdir,
-                'drivers.json'
-            )
-            driver_name, driver_info = JsonInfoParser(
-                json_path=base_json_path,
-                base_rootdir=rootdir,
-                target_rootdir=self._target_rootdir,
-            ).parse_json_info
-            base_json_path.unlink(missing_ok=True)
-            json_path = self._target_rootdir.joinpath('drivers_info.json')
-            self.dump_json(
-                json_path,
-                driver_info,
-            )
-            executable_path = driver_info[driver_name]['executable_path']
-            return executable_path
         else:
-            base_json_path = Path(
-                self._default_target_rootdir,
-                'drivers.json'
-            )
+            os.environ['WDM_LOCAL'] = '1'
+            rootdir = Path(DriverCacheManager()._root_dir)
+            base_executable_path = ChromeDriverManager().install()
+            target_rootdir = self._target_rootdir if self._target_rootdir.exists() else self._default_target_rootdir
+            parent_dir = target_rootdir.parent
             driver_name, driver_info = JsonInfoParser(
-                json_path=base_json_path,
+                json_path=rootdir.joinpath('drivers.json'),
                 base_rootdir=rootdir,
-                target_rootdir=self._default_target_rootdir,
-            ).parse_json_info
-            base_json_path.unlink(missing_ok=True)
-            json_path = self._default_target_rootdir.joinpath('drivers_info.json')
+                target_rootdir=target_rootdir,
+            )
+            shutil.move(
+                base_executable_path,
+                parent_dir,
+            )
+            shutil.rmtree(
+                rootdir,
+            )
             self.dump_json(
-                json_path,
-                driver_info,
+                json_path=parent_dir.joinpath(
+                    'drivers_info.json'
+                ),
+                json_data={
+                    driver_name: driver_info
+                }
             )
             executable_path = driver_info[driver_name]['executable_path']
             return executable_path
@@ -296,7 +311,7 @@ class InstallConfig(object):
 
 a = InstallConfig()
 a.enabled_install = True
-path = a.webdriver_manager_install()
+a.webdriver_manager_install()
 
 
 class DriverHandler(object):
