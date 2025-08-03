@@ -29,6 +29,12 @@ class RequestJson(object):
         self.request_json()
         return None
 
+    def clean(self) -> None:
+        self._cache_json_path.unlink(
+            missing_ok=True,
+        )
+        return None
+
 _all__ = [
     'RequestJson',
 ]
