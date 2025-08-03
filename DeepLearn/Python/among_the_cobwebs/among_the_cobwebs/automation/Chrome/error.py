@@ -1,52 +1,30 @@
+from selenium.common.exceptions import WebDriverException, NoSuchDriverException, SessionNotCreatedException
 from typing import Any
 
 
-class CompatibleError(Exception):
-    __slots__ = [
-        '_message',
-        '_status_code'
-    ]
-
+class ExecutableNotFoundError(NoSuchDriverException):
     def __init__(self,
-                 message: str | None = None,
-                 status_code: int | str | None = None
+                 massage: str,
                  ) -> None:
-        self._message = message
-        self._status_code = status_code
-
-    @property
-    def message(self) -> str | None:
-        return self._message
-
-    @property
-    def status_code(self) -> int | str | None:
-        return self._status_code
+        self._massage = massage
+        super().__init__(self._massage)
 
 
-class ExecutableFileError(Exception):
-    __slots__ = [
-        '_message',
-        '_status_code'
-    ]
-
+class VersionCompatibilityError(SessionNotCreatedException):
     def __init__(self,
-                 message: str | None = None,
-                 status_code: int | str | None = -1
+                 massage: str
                  ) -> None:
-        super().__init__(message)
-        self._message = message
-        self._status_code = status_code
-
-    @property
-    def message(self) -> str | None:
-        return self._message
-
-    @property
-    def status_code(self) -> int | str | None:
-        return self._status_code
+        self._massage = massage
+        super().__init__(self._massage)
 
 
-__all__ = [
-    'ExecutableFileError',
-    'CompatibleError'
-]
+class StartupError(WebDriverException):
+    def __init__(self,
+                 massage: str
+                 ) -> None:
+        self._massage = massage
+        super().__init__(self._massage)
+
+
+
+

@@ -1,6 +1,8 @@
 from among_the_cobwebs.automation.Chrome.api_mapping import Service
-from typing import IO, Sequence, Any
+from webdriver_manager.chrome import ChromeDriverManager
+from typing import IO, Sequence, Any, Union
 from pathlib import Path
+import os
 import sys
 
 
@@ -60,15 +62,19 @@ class LogConfig(DefaultOutput):
 class ServiceHandler:
     __slots__ = [
         '_executable_path',
+        '_installed_driver',
         '_port',
         '_env',
         '_service_args',
+        '_kwargs',
         '_log_config',
         '_service',
     ]
 
     def __init__(self,
                  executable_path: str | None = None,
+                 installed_driver: bool = False,
+                 installed_args: Sequence[Union[str, int]] | set | dict | None = None,
                  enabled_log: bool = False,
                  log_output: int | str | IO | None = None,
                  port: int = 0,
@@ -76,19 +82,24 @@ class ServiceHandler:
                  service_args: Sequence[str] = None,
                  **kwargs: Any,
                  ) -> None:
-        self._executable_path = executable_path
+        self._installed_driver = installed_driver
+        if self._installed_driver:
+            self._executable_path = ChromeDriverManager().install()
+        else:
+            self._executable_path = executable_path
         self._port = port
         self._env = env
         self._service_args = service_args
         self._log_config = LogConfig()
         self._log_config.enabled = enabled_log
         self._log_config.dir = log_output
+        self._kwargs = kwargs
         self._service = Service(
             executable_path=self._executable_path,
             log_output=self._log_config.dir,
             port=self._port,
             env=self._env,
-            serivce_args=self._service_args,
+            service_args=self._service_args,
             **kwargs,
         )
 
@@ -96,9 +107,18 @@ class ServiceHandler:
     def service(self) -> Service:
         return self._service
 
+    @property
+    def get_arguments(self) -> dict:
+        return {
+            'executable_path': self._executable_path,
+            'log_output': self._log_config.dir,
+            'port': self._port,
+            'env': self._env,
+            'service_args': self._service_args,
+            'kwargs': self._kwargs,
+        }
+
 
 __all__ = [
-    'DefaultOutput',
-    'LogConfig',
     'ServiceHandler',
 ]
