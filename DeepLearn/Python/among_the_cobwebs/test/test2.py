@@ -1,7 +1,7 @@
-from among_the_cobwebs.automation.WebDriver.system.windows.install import ChromeDriver
+from among_the_cobwebs.automation.WebDriver.system.windows.chrome.install import ChromeDriver
 
 
-p = ChromeDriver(clean_registry=True, clean_json_api=True).install()
+p = ChromeDriver().install()
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service

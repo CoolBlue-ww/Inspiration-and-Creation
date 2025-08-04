@@ -1,7 +1,7 @@
-from .parse_version import ParseBrowser
+from among_the_cobwebs.automation.WebDriver.system.windows.common.parse_version import ParseBrowser
 from .parse_json import ParseJson
 from .request_json import RequestJson
-from .query import QueryInstallPath
+from among_the_cobwebs.automation.WebDriver.system.windows.common.query import QueryInstallPath
 
 from pathlib import Path
 import platform
@@ -69,6 +69,7 @@ class ChromeDriver(object):
     def install(self) -> str:
         binary_path = self._parse_json.install()
         return binary_path
+
 
 __all__ = [
     'ChromeDriver',

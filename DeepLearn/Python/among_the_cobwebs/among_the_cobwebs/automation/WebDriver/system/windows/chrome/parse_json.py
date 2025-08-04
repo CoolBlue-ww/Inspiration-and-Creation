@@ -36,7 +36,6 @@ class ParseJson(object):
             if install_link['platform'] == self._platform:
                 url = install_link['url']
         if not url and possible_versions:
-            print(possible_versions)
             close_version = max(possible_versions, key=lambda v: int(v.split('.')[-1]))
             with open(self._cache_json_path, 'r', encoding='utf-8') as f:
                 for meta_info in ijson.items(f, 'versions.item'):
@@ -80,7 +79,8 @@ class ParseJson(object):
             binary_path = str(install_path.joinpath(
                 f'chromedriver-{self._platform}',
                 'chromedriver.exe',
-            ))
+                )
+            )
             return binary_path
 
         # 创建Session会话对象

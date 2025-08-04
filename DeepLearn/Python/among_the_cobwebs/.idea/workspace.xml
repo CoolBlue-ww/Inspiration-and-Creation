@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a73c329-5f81-4729-b042-10413dfd99af" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/install.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/query_version.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/edge/install.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/edge/request_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/request_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/request_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/chrome/138.0.7204.184/win64/chromedriver-win64.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/chrome/138.0.7204.184/win64/chromedriver-win64/LICENSE.chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/chrome/138.0.7204.184/win64/chromedriver-win64/THIRD_PARTY_NOTICES.chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/chrome/138.0.7204.184/win64/chromedriver-win64/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/InstalledApps.csv" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/common/InstalledApps.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/chromedriver_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/install.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/chrome/install.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/chrome/parse_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/common/parse_version.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/query.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/common/query.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/common/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/query_version.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/common/query_version.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/request_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/chrome/request_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +77,15 @@
     "Python.parse_json.executor": "Run",
     "Python.parse_version (1).executor": "Run",
     "Python.query.executor": "Run",
+    "Python.request_data.executor": "Run",
     "Python.request_json.executor": "Run",
     "Python.scratch_4.executor": "Run",
     "Python.scratch_5.executor": "Run",
     "Python.scratch_6.executor": "Run",
     "Python.scratch_7.executor": "Run",
     "Python.test2.executor": "Run",
+    "Python.test3.executor": "Run",
+    "Python.test4.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -94,11 +110,13 @@
       <recent name="F:\GitHub\Inspiration-and-Creation\DeepLearn\Python\among_the_cobwebs\among_the_cobwebs\automation\WebDriver\system\windows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub\Inspiration-and-Creation\DeepLearn\Python\among_the_cobwebs\among_the_cobwebs\automation\WebDriver\system\windows\common" />
+      <recent name="F:\GitHub\Inspiration-and-Creation\DeepLearn\Python\among_the_cobwebs\among_the_cobwebs\automation\WebDriver\system\windows\chrome" />
       <recent name="F:\GitHub\Inspiration-and-Creation\DeepLearn\Python\among_the_cobwebs\among_the_cobwebs\automation\WebDriver\system" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test2">
-    <configuration name="parse_json" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test4">
+    <configuration name="parse_version" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="among_the_cobwebs" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +130,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_json.py" />
+      <option name="SCRIPT_NAME" value="F:\GitHub\Inspiration-and-Creation\DeepLearn\Python\among_the_cobwebs\among_the_cobwebs\automation\WebDriver\system\windows\common\parse_version.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,7 +139,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="parse_version (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="request_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="among_the_cobwebs" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,58 +148,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/edge" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/parse_version.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="request_json" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="among_the_cobwebs" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/request_json.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="scratch_7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="among_the_cobwebs" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/edge/request_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -213,13 +185,59 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="among_the_cobwebs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="among_the_cobwebs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test2" />
-        <item itemvalue="Python.parse_json" />
-        <item itemvalue="Python.scratch_7" />
+        <item itemvalue="Python.test4" />
+        <item itemvalue="Python.request_data" />
+        <item itemvalue="Python.test3" />
         <item itemvalue="Python.parse_version (1)" />
-        <item itemvalue="Python.request_json" />
+        <item itemvalue="Python.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -252,6 +270,9 @@
       <workItem from="1754133297291" duration="12705000" />
       <workItem from="1754191507203" duration="15290000" />
       <workItem from="1754209072674" duration="15211000" />
+      <workItem from="1754229573918" duration="300000" />
+      <workItem from="1754230086171" duration="250000" />
+      <workItem from="1754274116842" duration="12620000" />
     </task>
     <servers />
   </component>
@@ -270,11 +291,14 @@
     <SUITE FILE_PATH="coverage/among_the_cobwebs$scratch_4.coverage" NAME="scratch_4 覆盖结果" MODIFIED="1753970366995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/among_the_cobwebs$scratch_7.coverage" NAME="scratch_7 覆盖结果" MODIFIED="1754214725159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/among_the_cobwebs$parse_json.coverage" NAME="parse_json 覆盖结果" MODIFIED="1754223941205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
-    <SUITE FILE_PATH="coverage/among_the_cobwebs$test2.coverage" NAME="test2 覆盖结果" MODIFIED="1754229284601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/among_the_cobwebs$test2.coverage" NAME="test2 覆盖结果" MODIFIED="1754274580994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/among_the_cobwebs$request_json.coverage" NAME="request_json 覆盖结果" MODIFIED="1754144299127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
+    <SUITE FILE_PATH="coverage/among_the_cobwebs$test4.coverage" NAME="test4 覆盖结果" MODIFIED="1754286655104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/among_the_cobwebs$request_data.coverage" NAME="request_data 覆盖结果" MODIFIED="1754284016982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows/edge" />
     <SUITE FILE_PATH="coverage/among_the_cobwebs$parse.coverage" NAME="parse 覆盖结果" MODIFIED="1754142877616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
+    <SUITE FILE_PATH="coverage/among_the_cobwebs$test3.coverage" NAME="test3 覆盖结果" MODIFIED="1754277528183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/among_the_cobwebs$scratch_6.coverage" NAME="scratch_6 覆盖结果" MODIFIED="1754142196172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/among_the_cobwebs$parse_version__1_.coverage" NAME="parse_version (1) 覆盖结果" MODIFIED="1754211916542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
+    <SUITE FILE_PATH="coverage/among_the_cobwebs$parse_version__1_.coverage" NAME="parse_version (1) 覆盖结果" MODIFIED="1754274921115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
     <SUITE FILE_PATH="coverage/among_the_cobwebs$query.coverage" NAME="query 覆盖结果" MODIFIED="1754134568853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/among_the_cobwebs/automation/WebDriver/system/windows" />
   </component>
 </project>
